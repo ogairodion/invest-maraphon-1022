@@ -1,0 +1,94 @@
+.problems {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 122px;
+        padding-bottom: 70px;
+    }
+
+    &__subtitle {
+        font-size: 37px;
+        line-height: 120%;
+        font-weight: 900;
+        text-align: center;
+        color: #C7EED4;
+        margin-bottom: 64px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 24px; 
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 19px; 
+            margin-bottom: 12px;   
+        }
+    }
+
+    .back {
+        position: absolute;
+        left: -550px;
+        bottom: -500px;
+
+        @media screen and (max-width: 1499px) {
+            display: none;
+        }
+    }
+
+    &__columns {
+        display: flex;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        min-width: 520px;
+        margin: 0 18px;
+
+        @media screen and (max-width: 1199px) {
+            min-width: 300px;
+        }
+
+        @media screen and (max-width: 767px) {
+            min-width: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        &-number {
+            font-size: 63px;
+            line-height: 1;
+            font-weight: 900;
+            color: #C7EED4;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 30px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 120%;
+            font-weight: 600;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

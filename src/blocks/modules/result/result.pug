@@ -1,0 +1,38 @@
+-
+    const result_items = [
+        {
+            number: '1',
+            text: 'Что делать со своим капиталом прямо сейчас и как правильно его диверсифицировать',
+        },
+        {
+            number: '2',
+            text: 'Какую валюту можно использовать альтернативной доллару и евро',
+        },
+        {
+            number: '3',
+            text: 'Как снизить волатильность своего портфеля на рынке, который постоянно подкидывает новых черных лебедей',
+        },
+        {
+            number: '4',
+            text: 'Разбалансируете свой текущий портфель на основе понимания главных трендов, которые мы разберем',
+        },
+        {
+            number: '5',
+            text: 'Будете уверено подходить к управлению своим капиталом в текущих условиях',
+        },
+    ]
+
+section.result
+    .line.line-top
+    .line.line-bottom
+    .back 
+        img(src="img/svg/main-top/back.svg", alt="")
+    .l-default 
+        h2.result__title.title.title--h2 Какой результат даст марафон
+        .result__subtitle за 5 дней активного участия?
+        .result__items
+            each result_item in result_items
+                .result__item
+                    .result__item-number    
+                        +webp(['result/' + result_item.number], 'png')
+                    .result__item-text= result_item.text
